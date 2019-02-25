@@ -13,12 +13,12 @@ public class Main {
         try {
             FileReader fr = new FileReader(file);
             fr.read(forest);
-//            System.out.println(Arrays.toString(forest));
+            Counter_m1 m1 = new Counter_m1(forest);
+            m1.info();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
